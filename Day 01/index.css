@@ -1,0 +1,52 @@
+* {
+    font-family: "JetBrains Mono", monospace !important;
+}
+
+html {
+    background: grey;
+}
+
+.name{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    background: black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 8px;
+}
+
+kbd, .sound {
+    pointer-events: none;
+}
+
+.keyContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100svw;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+
+.key {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    transform: scale(1);
+    border: 2px solid #1f1f1f;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.playing {
+    background: #111111;
+    border: 2px solid rgb(229, 229, 64);
+    transform: scale(1.1);
+}
