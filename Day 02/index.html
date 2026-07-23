@@ -31,9 +31,9 @@
             const seconds = time.getSeconds();
             const secondsDegrees = ((seconds / 60) * 360) + 90;
             if (seconds < 10) {
-                secs.innerHTML = "0" + seconds;
+                secs.textContent = "0" + seconds;
             } else {
-                secs.innerHTML = seconds;
+                secs.textContent = seconds;
             }
             if (seconds === 0) {
                 secHand.style.transition = "none";
@@ -45,9 +45,9 @@
             const minutes = time.getMinutes();
             const minutesDegrees = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
             if (minutes < 10) {
-                mins.innerHTML = "0" + minutes;
+                mins.textContent = "0" + minutes;
             } else {
-                mins.innerHTML = minutes;
+                mins.textContent = minutes;
             }
             if (minutes === 0) {
                 minHand.style.transition = "none";
@@ -59,9 +59,9 @@
             const hours = time.getHours();
             const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
             if (hours < 10) {
-                hrs.innerHTML = "0" + hours;
+                hrs.textContent = "0" + hours;
             } else {
-                hrs.innerHTML = hours;
+                hrs.textContent = hours;
             }
             if (hours === 0) {
                 hourHand.style.transition = "none";
